@@ -1,4 +1,4 @@
-let num = [1,2,3];
+let num = [1,2,3,4,5,6,7];
 // console.log(num);   // it is in array type
 
 // fchange array to string using tostring function 
@@ -51,10 +51,23 @@ let num = [1,2,3];
 
 
 // const compare = (a,b) => {
-//     return a-b
+//     return a-b                          //it will ascending order        // b-a  => it will give descending order
 // }
 // let num2 = [11,13,5];
 // console.log(num2.sort(compare));
+
+
+
+
+
+
+// splice and slice
+// num.splice(1,3,8,9,10)    // our array is [1,2,3]   and splice(1,1,5) => from 1 and delte othree value and add other three value 
+// console.log(num);
+
+
+//slice
+// console.log(num.slice(1,3));   // it will give items from index 1 to index 3 
 
 
 
