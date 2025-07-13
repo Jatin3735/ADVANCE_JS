@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Find the Grades</title>
+</head>
+<body class="bg-gradient-to-br from-green-100 to-blue-200 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md text-center space-y-6">
+
+    <h1 class="text-3xl font-bold text-gray-800">Find the Grades</h1>
+
+    <input type="number" id="input" placeholder="Enter the grade here" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"/>
+
+    <button onclick="grades()" class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded-lg transition duration-200">
+      Find the Grades
+    </button>
+
+    <p id="Result" class="text-lg font-medium text-gray-700">Result...</p>
+  </div>
+
+  <script>
+    const grades = () => {
+        const score = document.getElementById('input');
+
+        if(score>=91 && score<=100) {
+            document.getElementById('Result').innerHTML = 'Grade A';
+        }
+        else if(score>=81 && score<=90) {
+            document.getElementById('Result').innerHTML = 'Grade B';
+        }
+        else if(score>=71 && score<=80) {
+            document.getElementById('Result').innerHTML = 'Grade C';
+        }
+        else if(score>=61 && score<=70) {
+            document.getElementById('Result').innerHTML = 'Grade D';
+        }
+        else {
+            document.getElementById('Result').innerHTML = 'Fail';
+        }
+    }
+  </script>
+</body>
+</html>
+
+<!-- wrong answer -->

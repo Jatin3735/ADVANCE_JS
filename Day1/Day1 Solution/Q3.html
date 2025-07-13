@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Check the Numbers</title>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-purple-200 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md text-center space-y-6">
+    <h1 class="text-3xl font-bold text-gray-700">Check the Numbers</h1>
+
+    <div class="space-y-4">
+      <input id="input1" type="number" placeholder="First Number" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
+      <input id="input2" type="number" placeholder="Second Number" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
+    </div>
+
+    <button onclick="greater()" class="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-200">
+      Find Greater
+    </button>
+
+    <p id="Result" class="text-lg font-medium text-gray-800">Result...</p>
+  </div>
+
+  <script>
+
+        const greater = () => {
+            const input1 = document.getElementById('input1').value;
+            const input2 = document.getElementById('input2').value;
+
+            if(((input1 == '') && (input2 == ''))) {
+                document.getElementById('Result').innerHTML = 'Pls provide valid number.'
+            }
+            else if(input1 > input2) {
+                document.getElementById('Result').innerHTML = 'First Number is greater.'
+            }
+            else if(input1 == input2 && input1 != '' && input2 != '') {
+                document.getElementById('Result').innerHTML = 'Both are equal.'
+            }
+            else {
+                document.getElementById('Result').innerHTML = 'Second Number is greater.'
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+<!-- wrong one condition -->
