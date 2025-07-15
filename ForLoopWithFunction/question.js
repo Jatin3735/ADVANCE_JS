@@ -1,4 +1,4 @@
-let str = "hello jatin welcome to hartrons skill center";
+// let str = "hello jatin welcome to hartrons skill center";
  
 // let x=str;
 // for(let i=0;i<a.length;i++){
@@ -23,8 +23,9 @@ let str = "hello jatin welcome to hartrons skill center";
 // console.log(c);
 
 //   
-
-
+// let a = [1,2,5,4,7]
+// let t = 9;
+// let count = 0;
 // for(let i=0;i<a.length;i++){
 //     for(let j=0;j<a.length;j++){
 //         if(a[i]+a[j]==t){
